@@ -40,7 +40,7 @@ THEN I should have proper build scripts for a webpack application
 https://github.com/karafaris/TextEditor.git
 
 ## Heroku URL
-https://git.heroku.com/texteditor-2023.git
+https://texteditor-2023-144c594086be.herokuapp.com/
 
 ## Screenshots
 ![text-editor-dashboard-screenshot](client/src/images/texteditor-screenshot.jpg)
