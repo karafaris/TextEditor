@@ -1,14 +1,27 @@
 {
+  // Configure ESLint to work in a browser environment
   "env": {
     "browser": true
   },
+
+  // Define specific ESLint rules for this project
   "rules": {
-    // Override our default settings just for this directory
+    // Warn when using loose equality (==) instead of strict equality (===)
     "eqeqeq": "warn",
+
+    // Turn off strict mode, which enforces stricter coding practices
     "strict": "off",
+
+    // Allow importing of external modules without specifying them as dependencies
     "import/no-extraneous-dependencies": "off",
+
+    // Allow exporting only a single default export per module
     "import/prefer-default-export": "off",
+
+    // Allow using underscores in variable and function names
     "no-underscore-dangle": "off",
+
+    // Allow the use of certain restricted global variables
     "no-restricted-globals": "off"
   }
 }

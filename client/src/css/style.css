@@ -1,13 +1,16 @@
 /* app shell CSS */
+
+/* Define custom CSS variables */
 :root {
-  --primary: #31a9e1;
-  --gray: #ececec;
-  --whitesmoke: #f5f5f5;
-  --dark: #222;
-  --monoaki: #272822;
-  --navbar-height: 50px;
+  --primary: #31a9e1;        /* Primary color */
+  --gray: #ececec;           /* Gray color */
+  --whitesmoke: #f5f5f5;     /* Whitesmoke color */
+  --dark: #222;              /* Dark color */
+  --monoaki: #272822;        /* Monoaki color */
+  --navbar-height: 50px;     /* Navbar height */
 }
 
+/* Apply styles to the whole body */
 body {
   margin: 0;
   background-color: var(--monoaki);
@@ -16,10 +19,12 @@ body {
     sans-serif;
 }
 
+/* Styles for h1 headings */
 h1 {
   font-size: 22px;
 }
 
+/* Styles for the navbar */
 #navbar {
   height: var(--navbar-height);
   background-color: var(--primary);
@@ -33,10 +38,12 @@ h1 {
   letter-spacing: 0.9px;
 }
 
+/* Styles for the navbar brand image */
 .navbar-brand img {
   padding-top: 10px;
 }
 
+/* Styles for the loading spinner animation */
 .loading-spinner {
   animation-duration: 0.75s;
   animation-iteration-count: infinite;
@@ -49,6 +56,7 @@ h1 {
   border-radius: 50%;
 }
 
+/* Styles for the loading container */
 .loading-container {
   display: flex;
   justify-content: center;
@@ -56,6 +64,7 @@ h1 {
   height: calc(100vh - var(--navbar-height));
 }
 
+/* Keyframes animation for rotating forever */
 @keyframes rotate-forever {
   0% {
     transform: rotate(0deg);
@@ -66,6 +75,7 @@ h1 {
   }
 }
 
+/* Styles for the app update notification */
 .app-update {
   display: none;
   position: absolute;
@@ -76,10 +86,12 @@ h1 {
   display: block;
 }
 
+/* Styles for navigation buttons */
 .nav-btn {
   margin: 25px;
 }
 
+/* Styles for general buttons */
 .btn {
   text-align: center;
   display: inline-block;
@@ -95,11 +107,13 @@ h1 {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+/* Button hover styles */
 .btn:hover {
   background-color: #cecece;
   cursor: pointer;
 }
 
+/* Additional button size and style variations */
 .btn.btn-squared {
   border-radius: 0;
 }
@@ -120,6 +134,7 @@ h1 {
   text-align: center;
 }
 
+/* Button color variations */
 .btn.btn-primary {
   background-color: #2d3e50;
   color: #d9e9e8;
@@ -192,6 +207,7 @@ h1 {
   background-color: #31a9e1;
 }
 
+/* Media query for screen width <= 600px */
 @media only screen and (max-width: 600px) {
   .nav-btn {
     display: none;
